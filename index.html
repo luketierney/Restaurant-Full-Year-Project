@@ -2,8 +2,6 @@
 <html>
     <head>
         <link rel="stylesheet" href="UniversalStyleSheet.css">
-        <title>Coffey's Coffee</title>
-        <link rel="icon" type="image/png" href="Assets/Coffey Logo.png"/>
     </head>
     <style>
         @font-face {
@@ -62,6 +60,7 @@
         .mainIM{
             position: absolute;
             top: 12%;
+            z-index: -1;
             
 
         }
@@ -74,53 +73,38 @@
             font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
             font-size: 8em;
             color: rgb(230, 235, 221);
-        }
-        .bbox{
-            width: 100%;
-            height: auto;
-            position: absolute;
-            top: 08%;
-            left: 0%;
-
-        }
-        .box{
-            width: auto;
-            height: 30%;
-            position: absolute;
-            top:54%;
-            left:1%;
-            
-        }
-        .box2{
-            width: auto;
-            height: 30%;
-            position: absolute;
-            top:89%;
-            left:1%;
-            
+            position: relative;
+            top: 100%;
         }
         .title2{
             font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
             font-size: 2em;
             color: rgb(230, 235, 221);
+            position: relative;
+            Top: 130%;
         }
+        .Test{
+            position: relative;
+            width: 100%;
+            height: 80%;
+        } 
+
     </style>
     <!--This is main home page-->       
     <script>
         
     </script>
     <body>
-        <header style="background-color: rgb(35, 35, 35); min-height: 7%;max-height: 18%;"class="header">
+        <div class="Test";>
+        <header style="background-color: rgb(35, 35, 35); min-height: 12%;max-height: 18%;"class="header">
             <a href="index.html" class="tabs" style=" top: 18%; right: 35%; font-family:AmaticSC">Home </a>
             <a href="" class="tabs" style=" top: 18%; right: 3%; font-family:AmaticSC">Menu </a>
             <a href="" class="tabs" style=" top: 18%; right: 10%; font-family:AmaticSC">Contact </a>
             <a href="" class="tabs" style=" top: 18%; right: 20%; font-family:AmaticSC">Book a table </a>
             <a href="index.html"><img src="Assets/Coffey Logo.png" alt="coffey logo" style=" min-height: 05%;max-height: 125%;max-width: 100%; min-width: 05%;max-width: 6;" class="logo"></a>
         </header>
-        <div class="bbox">
-             <img src="Assets/Menu.png"alt="menu" style="width: 100%;height: auto;">
-             <p class= "box title1"><b> Coffey Co. </b></p>
-            <p class= "box2 title2">476 Webster St, Hanover MA </p>
-        </div>
-    </body>
+        <img src="Assets/Menu.png"alt="menu" style="width: 100%;height: auto;"class="mainIM">;
+        <p class= "title1"><b> Coffey Co. </b></p>
+        <p class= "title2">476 Webster St, Hanover MA </p>
+    </div></body>
 </html>
